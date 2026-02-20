@@ -1,0 +1,23 @@
+{
+  "name": "av1-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/marihmah/AV1-dev-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marihmah/AV1-dev-web/issues"
+  },
+  "homepage": "https://github.com/marihmah/AV1-dev-web#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
