@@ -21,6 +21,18 @@ app.post("/tarefas", (req, res) => {
     return res.status(400).json({erro: "Titulo é obrigatorio."})
 };
 
+app.delete("/tarefas/:id", (req, res) => {
+    const {id} = req.params;
+    const index = tarefas.findIndex(tarefa => tarefa.id == id);
+
+    if (index === -1) {
+        return res.status (404).json({ erro: "Tarefa não encontrada"});
+    }
+
+    tarefas.splice(index, 1);
+    res.status(200).json({mensagem: "Tarefa deletada com sucesso"});
+})
+
 adicionarTarefa(titulo)
 res.status(200).json({mensagem: "agora foi"});
 
